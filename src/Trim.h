@@ -6,21 +6,16 @@
 #define TRIMSTRING_INTERNSHIP_TRIM_H
 #include <string>
 #include <cstdlib>
+#include <iostream>
 
-class Trim {
+static class Trim {
 public:
-    Trim();
-
 
     int left_letter_index {};
     int right_letter_index {};
-    std::string text {};
+    static std::string text;
 
-    void loadText();{
-        std::cout << "Wprowadź tekst, z którego mam się pozbyć białych znaków: " << std::endl;
-        std::cin >> text;
-    }
-};
+    static void loadText();
 
 
 #endif //TRIMSTRING_INTERNSHIP_TRIM_H

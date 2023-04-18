@@ -13,7 +13,7 @@ std::string textTrim(std::string text, Predicate predicate){
     while(right_character_index >= left_character_index && predicate(text[right_character_index])){
         right_character_index--;
     }
-    return text.substr(left_character_index, right_character_index - left_character_index);
+    return text.substr(left_character_index, right_character_index - left_character_index + 1);
 
 }
 
@@ -22,9 +22,11 @@ bool isWhitespace(char whitespace){
 }
 
 
-
 int main() {
 
+    std::string text = "    Przykladowy string      ";
+    std::string trimmed_text = textTrim(text, isWhitespace);
+    std::cout << trimmed_text << std::endl;
 
 }
 

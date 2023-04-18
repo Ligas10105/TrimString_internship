@@ -1,0 +1,1 @@
+# TrimString_internship

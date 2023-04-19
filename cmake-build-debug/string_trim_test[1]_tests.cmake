@@ -1,5 +1,0 @@
-add_test([=[TextTrimTest.TrimWhiteSpace]=]  C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/string_trim_test.exe [==[--gtest_filter=TextTrimTest.TrimWhiteSpace]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[TextTrimTest.TrimWhiteSpace]=]  PROPERTIES WORKING_DIRECTORY C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[TextTrimTest.TrimDigits]=]  C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/string_trim_test.exe [==[--gtest_filter=TextTrimTest.TrimDigits]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[TextTrimTest.TrimDigits]=]  PROPERTIES WORKING_DIRECTORY C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  string_trim_test_TESTS TextTrimTest.TrimWhiteSpace TextTrimTest.TrimDigits)

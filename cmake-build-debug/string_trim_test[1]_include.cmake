@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/string_trim_test[1]_tests.cmake")
-  include("C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/string_trim_test[1]_tests.cmake")
-else()
-  add_test(string_trim_test_NOT_BUILT string_trim_test_NOT_BUILT)
-endif()

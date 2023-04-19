@@ -3,7 +3,7 @@ project(TrimString_internship)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(TrimString_internship src/trim_string.cpp)
+add_executable(TrimString_internship src/trim_string.cpp src/trim_string.h)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -12,15 +12,6 @@ FetchContent_Declare(
 )
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
-
-add_executable(
-        hello_test
-        test/hello_test.cpp
-        src/trim_string.h)
-target_link_libraries(
-        hello_test
-        GTest::gtest_main
-)
 
 add_executable(
         string_trim_test
@@ -32,5 +23,4 @@ target_link_libraries(
 )
 
 include(GoogleTest)
-gtest_discover_tests(hello_test)
 gtest_discover_tests(string_trim_test)

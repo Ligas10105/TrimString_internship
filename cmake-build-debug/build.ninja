@@ -74,41 +74,6 @@ build TrimString_internship.exe: CXX_EXECUTABLE_LINKER__TrimString_internship_De
   TARGET_PDB = TrimString_internship.exe.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target hello_test
-
-
-#############################################
-# Order-only phony target for hello_test
-
-build cmake_object_order_depends_target_hello_test: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build CMakeFiles/hello_test.dir/test/hello_test.cpp.obj: CXX_COMPILER__hello_test_Debug C$:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/test/hello_test.cpp || cmake_object_order_depends_target_hello_test
-  DEP_FILE = CMakeFiles\hello_test.dir\test\hello_test.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/_deps/googletest-src/googletest
-  OBJECT_DIR = CMakeFiles\hello_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\hello_test.dir\test
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target hello_test
-
-
-#############################################
-# Link the executable hello_test.exe
-
-build hello_test.exe hello_test[1]_tests.cmake | ${cmake_ninja_workdir}hello_test[1]_tests.cmake: CXX_EXECUTABLE_LINKER__hello_test_Debug CMakeFiles/hello_test.dir/test/hello_test.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\hello_test.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\Users\ligas\OneDrive\Pulpit\Github\TrimString_internship\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=hello_test -D TEST_EXECUTABLE=C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/hello_test.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=hello_test_TESTS -D CTEST_FILE=C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/hello_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GoogleTestAddTests.cmake""
-  PRE_LINK = cd .
-  RESTAT = 1
-  TARGET_FILE = hello_test.exe
-  TARGET_IMPLIB = libhello_test.dll.a
-  TARGET_PDB = hello_test.exe.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target string_trim_test
 
 
@@ -559,8 +524,6 @@ build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
 
-build hello_test: phony hello_test.exe
-
 build libgmock.a: phony lib/libgmock.a
 
 build libgmock_main.a: phony lib/libgmock_main.a
@@ -579,7 +542,7 @@ build string_trim_test: phony string_trim_test.exe
 #############################################
 # Folder: C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug
 
-build all: phony TrimString_internship.exe hello_test.exe string_trim_test.exe _deps/googletest-build/all
+build all: phony TrimString_internship.exe string_trim_test.exe _deps/googletest-build/all
 
 # =============================================================================
 

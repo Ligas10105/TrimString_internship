@@ -25,6 +25,6 @@
     <inspection_tool class="OCSimplifyInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="RedundantCast" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="SignednessMismatch" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="UnreachableCode" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="UnreachableCode" enabled="true" level="ERROR" enabled_by_default="true" />
   </profile>
 </component>

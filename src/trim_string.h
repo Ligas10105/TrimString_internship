@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
+
 template<typename Predicate>
 std::string textTrim(std::string text, Predicate predicate){
     int left_character_index{0};
@@ -21,5 +22,7 @@ std::string textTrim(std::string text, Predicate predicate){
     }
     return text.substr(left_character_index, right_character_index - left_character_index + 1);
 }
+
+
 
 #endif //TRIMSTRING_INTERNSHIP_TRIM_STRING_H

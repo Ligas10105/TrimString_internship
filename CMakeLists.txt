@@ -3,8 +3,6 @@ project(TrimString_internship)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(TrimString_internship src/trim_string.cpp src/trim_string.h)
-
 include(FetchContent)
 FetchContent_Declare(
         googletest

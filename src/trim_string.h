@@ -3,25 +3,25 @@
 //
 #ifndef TRIMSTRING_INTERNSHIP_TRIM_STRING_H
 #define TRIMSTRING_INTERNSHIP_TRIM_STRING_H
+
 #include <cstdlib>
 #include <string>
 #include <iostream>
+#include <algorithm>
+#include <array>
 
-template<typename Predicate>
-std::string textTrim(std::string text, Predicate predicate){
-    int left_character_index{0};
-    int right_character_index = text.length() - 1;
+template<typename Container, typename Predicate>
+Container containerTrim(Container container, Predicate predicate) {
+    auto left = std::find_if_not(container.begin(), container.end(), predicate);
+    auto right = std::find_if_not(container.rbegin(), container.rend(), predicate).base();
 
-    while (left_character_index <= right_character_index && predicate(text[left_character_index])) {
-        left_character_index++;
+    if (left != container.end() && right != container.begin()) {
+        --right;
+        return Container(left, std::next(right));
+    } else {
+        return Container();
     }
-
-    while (right_character_index >= left_character_index && predicate(text[right_character_index])) {
-        right_character_index--;
-    }
-    return text.substr(left_character_index, right_character_index - left_character_index + 1);
 }
-
 
 
 #endif //TRIMSTRING_INTERNSHIP_TRIM_STRING_H

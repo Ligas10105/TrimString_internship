@@ -1,7 +1,6 @@
 //
 // Created by ligas on 19.04.2023.
 //
-
 #ifndef TRIMSTRING_INTERNSHIP_TRIM_STRING_H
 #define TRIMSTRING_INTERNSHIP_TRIM_STRING_H
 #include <cstdlib>

@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/example[1]_tests.cmake")
+  include("C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/example[1]_tests.cmake")
+else()
+  add_test(example_NOT_BUILT example_NOT_BUILT)
+endif()

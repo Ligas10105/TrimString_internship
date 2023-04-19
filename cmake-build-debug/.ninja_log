@@ -1,0 +1,25 @@
+# ninja log v5
+12	6220	7035956855877020	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	b2faaa35ae9f0311
+1	612	7036076298396122	build.ninja	92ed19488c8de96e
+6	1294	7035970027734799	CMakeFiles/example.dir/src/hello_test.cpp.obj	6e7f6ee9d0528f34
+3	340	7035958577889095	CMakeFiles/TrimString_internship.dir/src/main.cpp.obj	4e0e6ff988561e3d
+341	434	7035958578794763	TrimString_internship.exe	8e4ebfc0c474806b
+6221	7958	7035956873372574	lib/libgtest.a	f0a616bc26bb36fb
+4	356	7035963638310155	CMakeFiles/example.dir/src/main.cpp.obj	e682ee18d16e5b8d
+10	1137	7035963646117713	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	2610bc8678188d9c
+1137	1197	7035963646716444	lib/libgtest_main.a	188a8d68887ab29
+1156	3412	7036012872580435	hello_test.exe	3e66847232a28d17
+1	2759	7035956821333888	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	5addef2be91da06c
+6	1662	7035956810414397	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	5af3ff49eacf8eae
+4	1163	7036074368363942	CMakeFiles/string_trim_test.dir/test/string_trim_test.cpp.obj	63b5d057bbf4dd84
+7958	8211	7035956875911283	lib/libgmock.a	e44854857d7fe598
+8212	8270	7035956876500967	lib/libgmock_main.a	d5fc0d198e64a630
+5	1161	7035972439560630	CMakeFiles/hello_test.dir/src/hello_test.cpp.obj	542d0adde6fb43d7
+1156	3412	7036012872580435	hello_test[1]_tests.cmake	3e66847232a28d17
+1156	3412	7036012872580435	C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/hello_test[1]_tests.cmake	3e66847232a28d17
+5	1155	7036012850029293	CMakeFiles/hello_test.dir/test/hello_test.cpp.obj	48f63e585ac6b50f
+11	1219	7035987116690356	CMakeFiles/example.dir/test/hello_test.cpp.obj	dd7297d460069e13
+6	1236	7035987116872659	CMakeFiles/example.dir/test/string_trim_test.cpp.obj	1c5f231803c42f16
+1289	4887	7036015281882713	string_trim_test.exe	4f0361df99ba629f
+1289	4887	7036015281882713	string_trim_test[1]_tests.cmake	4f0361df99ba629f
+1289	4887	7036015281882713	C:/Users/ligas/OneDrive/Pulpit/Github/TrimString_internship/cmake-build-debug/string_trim_test[1]_tests.cmake	4f0361df99ba629f

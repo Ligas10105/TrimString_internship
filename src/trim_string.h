@@ -8,7 +8,7 @@
 #include <string>
 #include <iostream>
 #include <algorithm>
-#include <array>
+
 
 template<typename Container, typename Predicate>
 Container containerTrim(Container container, Predicate predicate) {
